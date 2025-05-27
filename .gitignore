@@ -1,0 +1,20 @@
+# Visual Studio filer
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Node.js filer (frontend)
+node_modules/
+
+# Loggfiler och temporära filer
+*.log
+*.cache
+
+# Körbara filer och databaser
+*.exe
+*.dll
+*.pdb
+*.db
+
