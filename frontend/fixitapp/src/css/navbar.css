@@ -1,0 +1,57 @@
+.navbar {
+  background-color: #010a11; /* fin blå färg */
+  padding: 0.5rem 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar li {
+  margin-right: 1.5rem;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a,
+.navbar button {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  background-color: rgba(17, 1, 1, 0.2);
+}
+
+.navbar button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Mobilvänligt: stapla menyn */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,42 @@
+/* Enkel layout */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #090000;
+}
+
+.header {
+  background-color: #007acc;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-content {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

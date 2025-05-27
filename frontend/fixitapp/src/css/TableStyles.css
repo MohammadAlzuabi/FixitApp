@@ -1,0 +1,232 @@
+/* Wrapper och grundstil */
+.table-wrapper {
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Rubrik */
+.table-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Knapp för att öppna modal */
+.open-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Tabellstil */
+table {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(32, 11, 11, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody td {
+  padding: 10px 15px;
+   border-right: 1px solid #ddd; /* Streck mellan kolumner */
+}
+tbody tr td:last-child {
+  border-right: none;
+}
+
+/* Action-knappar i tabellen */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #218838;
+}
+
+button:last-child {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 8px;
+}
+
+button:last-child:hover {
+  background-color: #b02a37;
+}
+
+/* Modal-overlay (bakgrundsfärg och positionering) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modalruta */
+.modal {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Modalrubrik */
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Input i modalen */
+.modal input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.modal input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Knapprad i modal */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 8px 18px;
+  font-weight: 600;
+}
+
+.modal-buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.modal-buttons button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #565e64;
+}
+
+/* Meddelande vid post */
+p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: green;
+}
+
+/*Dop down*/
+.modal select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+  appearance: none; /* tar bort default pilen i vissa webbläsare */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.modal select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal input[type="file"] {
+  display: none;
+}
+
+/* Stil för en egen "välj fil"-knapp */
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #0e2b4a;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.file-upload-label:hover {
+  background-color: #021830;
+}
+
+/* Bildpreview */
+.file-preview {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
